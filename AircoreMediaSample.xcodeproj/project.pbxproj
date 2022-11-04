@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09CA781C2914CC8A0021D4B4 /* AircoreMedia in Frameworks */ = {isa = PBXBuildFile; productRef = 09CA781B2914CC8A0021D4B4 /* AircoreMedia */; };
+		CA21CCF12901F5FA000A1BE3 /* ChannelInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21CCF02901F5FA000A1BE3 /* ChannelInfoView.swift */; };
+		CA5BF4B028A2D668007ADC0F /* AircoreMediaSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF4AF28A2D668007ADC0F /* AircoreMediaSampleApp.swift */; };
+		CA5BF4B228A2D668007ADC0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF4B128A2D668007ADC0F /* ContentView.swift */; };
+		CA5BF4B428A2D66A007ADC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5BF4B328A2D66A007ADC0F /* Assets.xcassets */; };
+		CAFB53C528A30B6300C8660F /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */; };
+		CAFB53C728A3B2BE00C8660F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CAFB53C628A3B2BE00C8660F /* README.md */; };
+		CAFB53CA28A3C20700C8660F /* ChannelConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53C928A3C20700C8660F /* ChannelConfigView.swift */; };
+		CAFB53CC28A3C8A500C8660F /* LocalStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53CB28A3C8A500C8660F /* LocalStreamView.swift */; };
+		CAFB53CE28A3C8AE00C8660F /* RemoteStreamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53CD28A3C8AE00C8660F /* RemoteStreamsView.swift */; };
+		CAFB53D028A4112100C8660F /* ChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53CF28A4112100C8660F /* ChannelViewModel.swift */; };
+		CAFB53D228A4116200C8660F /* LocalStreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53D128A4116200C8660F /* LocalStreamViewModel.swift */; };
+		CAFB53D728A5824200C8660F /* ChannelConnectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53D628A5824200C8660F /* ChannelConnectionInfo.swift */; };
+		CAFB53DF28AC4A9D00C8660F /* RemoteStreamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53DE28AC4A9D00C8660F /* RemoteStreamsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA21CCF02901F5FA000A1BE3 /* ChannelInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInfoView.swift; sourceTree = "<group>"; };
+		CA5BF4AC28A2D668007ADC0F /* AircoreMediaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AircoreMediaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5BF4AF28A2D668007ADC0F /* AircoreMediaSampleApp.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AircoreMediaSampleApp.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CA5BF4B128A2D668007ADC0F /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CA5BF4B328A2D66A007ADC0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
+		CAFB53C628A3B2BE00C8660F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CAFB53C928A3C20700C8660F /* ChannelConfigView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ChannelConfigView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CAFB53CB28A3C8A500C8660F /* LocalStreamView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LocalStreamView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CAFB53CD28A3C8AE00C8660F /* RemoteStreamsView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RemoteStreamsView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CAFB53CF28A4112100C8660F /* ChannelViewModel.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ChannelViewModel.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CAFB53D128A4116200C8660F /* LocalStreamViewModel.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LocalStreamViewModel.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CAFB53D628A5824200C8660F /* ChannelConnectionInfo.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ChannelConnectionInfo.swift; sourceTree = "<group>"; tabWidth = 2; };
+		CAFB53DD28A5B26700C8660F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CAFB53DE28AC4A9D00C8660F /* RemoteStreamsViewModel.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RemoteStreamsViewModel.swift; sourceTree = "<group>"; tabWidth = 2; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA5BF4A928A2D668007ADC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CA781C2914CC8A0021D4B4 /* AircoreMedia in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA5BF4A328A2D668007ADC0F = {
+			isa = PBXGroup;
+			children = (
+				CA5BF4AE28A2D668007ADC0F /* AircoreMediaSample */,
+				CAFB53C328A30B6300C8660F /* Configuration */,
+				CAFB53C628A3B2BE00C8660F /* README.md */,
+				CA5BF4AD28A2D668007ADC0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA5BF4AD28A2D668007ADC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA5BF4AC28A2D668007ADC0F /* AircoreMediaSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA5BF4AE28A2D668007ADC0F /* AircoreMediaSample */ = {
+			isa = PBXGroup;
+			children = (
+				CAFB53DD28A5B26700C8660F /* Info.plist */,
+				CA5BF4AF28A2D668007ADC0F /* AircoreMediaSampleApp.swift */,
+				CAFB53E028AE7FF900C8660F /* View Models */,
+				CAFB53C828A3C1EB00C8660F /* Views */,
+				CA5BF4B328A2D66A007ADC0F /* Assets.xcassets */,
+			);
+			path = AircoreMediaSample;
+			sourceTree = "<group>";
+		};
+		CAFB53C328A30B6300C8660F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CAFB53C828A3C1EB00C8660F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA5BF4B128A2D668007ADC0F /* ContentView.swift */,
+				CAFB53CB28A3C8A500C8660F /* LocalStreamView.swift */,
+				CAFB53CD28A3C8AE00C8660F /* RemoteStreamsView.swift */,
+				CAFB53C928A3C20700C8660F /* ChannelConfigView.swift */,
+				CA21CCF02901F5FA000A1BE3 /* ChannelInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAFB53E028AE7FF900C8660F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAFB53CF28A4112100C8660F /* ChannelViewModel.swift */,
+				CAFB53D128A4116200C8660F /* LocalStreamViewModel.swift */,
+				CAFB53DE28AC4A9D00C8660F /* RemoteStreamsViewModel.swift */,
+				CAFB53D628A5824200C8660F /* ChannelConnectionInfo.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA5BF4AB28A2D668007ADC0F /* AircoreMediaSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA5BF4BA28A2D66A007ADC0F /* Build configuration list for PBXNativeTarget "AircoreMediaSample" */;
+			buildPhases = (
+				CA5BF4A828A2D668007ADC0F /* Sources */,
+				CA5BF4A928A2D668007ADC0F /* Frameworks */,
+				CA5BF4AA28A2D668007ADC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AircoreMediaSample;
+			packageProductDependencies = (
+				09CA781B2914CC8A0021D4B4 /* AircoreMedia */,
+			);
+			productName = AircoreMediaSample;
+			productReference = CA5BF4AC28A2D668007ADC0F /* AircoreMediaSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA5BF4A428A2D668007ADC0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CA5BF4AB28A2D668007ADC0F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = CA5BF4A728A2D668007ADC0F /* Build configuration list for PBXProject "AircoreMediaSample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA5BF4A328A2D668007ADC0F;
+			packageReferences = (
+				09CA781A2914CC8A0021D4B4 /* XCRemoteSwiftPackageReference "aircore-media-ios" */,
+			);
+			productRefGroup = CA5BF4AD28A2D668007ADC0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA5BF4AB28A2D668007ADC0F /* AircoreMediaSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA5BF4AA28A2D668007ADC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFB53C528A30B6300C8660F /* SampleCode.xcconfig in Resources */,
+				CAFB53C728A3B2BE00C8660F /* README.md in Resources */,
+				CA5BF4B428A2D66A007ADC0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA5BF4A828A2D668007ADC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5BF4B228A2D668007ADC0F /* ContentView.swift in Sources */,
+				CAFB53CA28A3C20700C8660F /* ChannelConfigView.swift in Sources */,
+				CAFB53CC28A3C8A500C8660F /* LocalStreamView.swift in Sources */,
+				CAFB53DF28AC4A9D00C8660F /* RemoteStreamsViewModel.swift in Sources */,
+				CAFB53D228A4116200C8660F /* LocalStreamViewModel.swift in Sources */,
+				CAFB53D028A4112100C8660F /* ChannelViewModel.swift in Sources */,
+				CA21CCF12901F5FA000A1BE3 /* ChannelInfoView.swift in Sources */,
+				CAFB53D728A5824200C8660F /* ChannelConnectionInfo.swift in Sources */,
+				CAFB53CE28A3C8AE00C8660F /* RemoteStreamsView.swift in Sources */,
+				CA5BF4B028A2D668007ADC0F /* AircoreMediaSampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA5BF4B828A2D66A007ADC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA5BF4B928A2D66A007ADC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA5BF4BB28A2D66A007ADC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AircoreMediaSample/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Testing AircoreMedia with input from the microphone.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.aircore.media.sample.${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA5BF4BC28A2D66A007ADC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AircoreMediaSample/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Testing AircoreMedia with input from the microphone.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.aircore.media.sample.${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA5BF4A728A2D668007ADC0F /* Build configuration list for PBXProject "AircoreMediaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5BF4B828A2D66A007ADC0F /* Debug */,
+				CA5BF4B928A2D66A007ADC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA5BF4BA28A2D66A007ADC0F /* Build configuration list for PBXNativeTarget "AircoreMediaSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5BF4BB28A2D66A007ADC0F /* Debug */,
+				CA5BF4BC28A2D66A007ADC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09CA781A2914CC8A0021D4B4 /* XCRemoteSwiftPackageReference "aircore-media-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aircoreio/aircore-media-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 3.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09CA781B2914CC8A0021D4B4 /* AircoreMedia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09CA781A2914CC8A0021D4B4 /* XCRemoteSwiftPackageReference "aircore-media-ios" */;
+			productName = AircoreMedia;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA5BF4A428A2D668007ADC0F /* Project object */;
+}
