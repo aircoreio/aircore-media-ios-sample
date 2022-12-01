@@ -430,7 +430,7 @@
 			repositoryURL = "https://github.com/aircoreio/aircore-media-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.0.8;
+				version = 3.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
