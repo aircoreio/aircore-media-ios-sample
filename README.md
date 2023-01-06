@@ -6,7 +6,7 @@ AircoreMediaSample is a sample app that gives an example of how to use the [Airc
 
 ### Device
 
-Build AircoreMediaSample with Xcode 13 or greater, to a device running iOS 14 or greater. Building to a device requires setting the development team in the project's Signing & Capabilites tab. A provisioning profile should be automatically created for this sample app using the selected development team.
+Build AircoreMediaSample with Xcode 13.2.1 or greater, to a device running iOS 14 or greater. Building to a device requires setting the development team in the project's Signing & Capabilites tab. A provisioning profile should be automatically created for this sample app using the selected development team.
 
 ### Simulator
 
