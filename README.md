@@ -1,6 +1,6 @@
 # AircoreMediaSample
 
-AircoreMediaSample is a sample app that gives an example of how to use the [AircoreMedia-iOS](https://github.com/aircoreio/aircore-media-ios) SDK to connect real-time voice calls. 
+AircoreMediaSample is a sample app that gives an example of how to use the [AircoreMedia-iOS](https://github.com/aircoreio/aircore-media-ios) SDK to connect real-time audio and video streams. 
 
 # Building
 
@@ -23,6 +23,8 @@ This sample app has a very simple list UI that has various sections relating to 
 - Channel Status
 ...This section lists the currently connected Channel's ID, the Channel's active state, and a termination cause if the Channel has been terminated
 - Local Stream
-...If the Channel has been joined, LocalStream properties will be shown, including a button for starting and stopping the LocalStream, a button for muting the stream that will turn green when voice activity is detected, and displays for the connection state and termination cause.
+...If the Channel has been joined, LocalStream properties will be shown, including a button for starting and stopping the LocalStream, a switch for an "audio-only" mode where video is not published, a button for muting the stream's audio that will turn green when voice activity is detected, a button for muting the stream's video, and displays for the connection state and termination cause.
 - Remote Streams
-...If the Channel has currently connected RemoteStream objects, the section shows a row for each connected RemoteStream, with an indicator for the local and remote mute state, the voice activity, the RemoteStream's user ID, and the RemoteStream's connection state.
+...If the Channel has currently connected RemoteStream objects, the section shows a row for each connected RemoteStream, with an indicator for the local and remote audio mute state, the voice activity, the local and remote video mute state, the RemoteStream's user ID, and the RemoteStream's connection state.
+- Video View
+...If publishing a LocalStream with video, the preview of your publish stream will be displayed with an indicator if video is muted. RemoteStream video streams will also be displayed in a horizontally scrollable set of tiles, with indicators if the RemoteStream video is muted.   
