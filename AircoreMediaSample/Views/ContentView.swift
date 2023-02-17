@@ -8,43 +8,63 @@
 import Combine
 import SwiftUI
 
+extension View {
+  func dismissKeyboardOnVerticalDrag() -> some View {
+    self
+      .gesture(DragGesture().onChanged({ gesture in
+        if abs(gesture.translation.height) > abs(gesture.translation.width) {
+          UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
+      }))
+  }
+}
+
 struct ContentView: View {
-  @ObservedObject var channel = ChannelViewModel()
-  @ObservedObject var localStream = LocalStreamViewModel()
-  @ObservedObject private var remoteStreams = RemoteStreamsViewModel()
+  @ObservedObject var channelViewModel = ChannelViewModel()
+  @ObservedObject var localStreamViewModel = LocalStreamViewModel()
+  @ObservedObject private var remoteStreamsViewModel = RemoteStreamsViewModel()
+  let cameraViewModel = CameraViewModel()
 
   init() {
-    localStream.channel = channel
-    remoteStreams.channel = channel
+    localStreamViewModel.channelViewModel = channelViewModel
+    localStreamViewModel.videoSource = cameraViewModel.camera
+    remoteStreamsViewModel.channelViewModel = channelViewModel
   }
 
   var body: some View {
     VStack {
       Form {
         Section(content: {
-          ChannelConfigView(channel: channel)
+          ChannelConfigView(channelViewModel: channelViewModel)
         }, header: {
           Text("Channel Config")
         })
 
         Section(content: {
-          ChannelInfoView(channel: channel)
+          ChannelInfoView(channelViewModel: channelViewModel)
         }, header: {
           Text("Channel Info")
         })
 
         Section(content: {
-          LocalStreamView(localStream: localStream)
+          LocalStreamView(localStreamViewModel: localStreamViewModel)
         }, header: {
           Text("Local stream")
         })
 
         Section(content: {
-          RemoteStreamsView(remoteStreams: remoteStreams)
+          RemoteStreamsView(remoteStreamsViewModel: remoteStreamsViewModel)
         }, header: {
           Text("Remote streams")
         })
       }
+      .overlay(Divider(), alignment: .bottom)
+      .dismissKeyboardOnVerticalDrag()
+
+      VideoChatView(localStreamViewModel: localStreamViewModel,
+                    remoteStreamsViewModel: remoteStreamsViewModel,
+                    cameraViewModel: cameraViewModel)
+        .frame(height: 100)
     }
       .navigationTitle("AircoreMedia Sample")
   }

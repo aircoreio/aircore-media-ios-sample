@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		09CA781C2914CC8A0021D4B4 /* AircoreMedia in Frameworks */ = {isa = PBXBuildFile; productRef = 09CA781B2914CC8A0021D4B4 /* AircoreMedia */; };
+		CA0FA685297B269000EA0C43 /* VideoChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FA684297B269000EA0C43 /* VideoChatView.swift */; };
+		CA0FA687297B2BB200EA0C43 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FA686297B2BB200EA0C43 /* CameraView.swift */; };
+		CA0FA6F5297F02E800EA0C43 /* RemoteVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FA6F4297F02E800EA0C43 /* RemoteVideosView.swift */; };
+		CA0FA6F7297F182200EA0C43 /* VideoRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FA6F6297F182200EA0C43 /* VideoRenderView.swift */; };
 		CA21CCF12901F5FA000A1BE3 /* ChannelInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21CCF02901F5FA000A1BE3 /* ChannelInfoView.swift */; };
 		CA5BF4B028A2D668007ADC0F /* AircoreMediaSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF4AF28A2D668007ADC0F /* AircoreMediaSampleApp.swift */; };
 		CA5BF4B228A2D668007ADC0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF4B128A2D668007ADC0F /* ContentView.swift */; };
 		CA5BF4B428A2D66A007ADC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5BF4B328A2D66A007ADC0F /* Assets.xcassets */; };
+		CAAA91BB298B025600B85FF8 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAA91BA298B025600B85FF8 /* CameraViewModel.swift */; };
 		CAFB53C528A30B6300C8660F /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */; };
 		CAFB53C728A3B2BE00C8660F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CAFB53C628A3B2BE00C8660F /* README.md */; };
 		CAFB53CA28A3C20700C8660F /* ChannelConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB53C928A3C20700C8660F /* ChannelConfigView.swift */; };
@@ -24,11 +29,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA0FA684297B269000EA0C43 /* VideoChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoChatView.swift; sourceTree = "<group>"; };
+		CA0FA686297B2BB200EA0C43 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		CA0FA6F4297F02E800EA0C43 /* RemoteVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVideosView.swift; sourceTree = "<group>"; };
+		CA0FA6F6297F182200EA0C43 /* VideoRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRenderView.swift; sourceTree = "<group>"; };
 		CA21CCF02901F5FA000A1BE3 /* ChannelInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInfoView.swift; sourceTree = "<group>"; };
 		CA5BF4AC28A2D668007ADC0F /* AircoreMediaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AircoreMediaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5BF4AF28A2D668007ADC0F /* AircoreMediaSampleApp.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AircoreMediaSampleApp.swift; sourceTree = "<group>"; tabWidth = 2; };
 		CA5BF4B128A2D668007ADC0F /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		CA5BF4B328A2D66A007ADC0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAAA91BA298B025600B85FF8 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		CAFB53C428A30B6300C8660F /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		CAFB53C628A3B2BE00C8660F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CAFB53C928A3C20700C8660F /* ChannelConfigView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ChannelConfigView.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -99,6 +109,10 @@
 				CAFB53CD28A3C8AE00C8660F /* RemoteStreamsView.swift */,
 				CAFB53C928A3C20700C8660F /* ChannelConfigView.swift */,
 				CA21CCF02901F5FA000A1BE3 /* ChannelInfoView.swift */,
+				CA0FA684297B269000EA0C43 /* VideoChatView.swift */,
+				CA0FA686297B2BB200EA0C43 /* CameraView.swift */,
+				CA0FA6F4297F02E800EA0C43 /* RemoteVideosView.swift */,
+				CA0FA6F6297F182200EA0C43 /* VideoRenderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +124,7 @@
 				CAFB53D128A4116200C8660F /* LocalStreamViewModel.swift */,
 				CAFB53DE28AC4A9D00C8660F /* RemoteStreamsViewModel.swift */,
 				CAFB53D628A5824200C8660F /* ChannelConnectionInfo.swift */,
+				CAAA91BA298B025600B85FF8 /* CameraViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -194,12 +209,17 @@
 				CA5BF4B228A2D668007ADC0F /* ContentView.swift in Sources */,
 				CAFB53CA28A3C20700C8660F /* ChannelConfigView.swift in Sources */,
 				CAFB53CC28A3C8A500C8660F /* LocalStreamView.swift in Sources */,
+				CA0FA687297B2BB200EA0C43 /* CameraView.swift in Sources */,
+				CA0FA6F5297F02E800EA0C43 /* RemoteVideosView.swift in Sources */,
 				CAFB53DF28AC4A9D00C8660F /* RemoteStreamsViewModel.swift in Sources */,
 				CAFB53D228A4116200C8660F /* LocalStreamViewModel.swift in Sources */,
 				CAFB53D028A4112100C8660F /* ChannelViewModel.swift in Sources */,
+				CAAA91BB298B025600B85FF8 /* CameraViewModel.swift in Sources */,
+				CA0FA6F7297F182200EA0C43 /* VideoRenderView.swift in Sources */,
 				CA21CCF12901F5FA000A1BE3 /* ChannelInfoView.swift in Sources */,
 				CAFB53D728A5824200C8660F /* ChannelConnectionInfo.swift in Sources */,
 				CAFB53CE28A3C8AE00C8660F /* RemoteStreamsView.swift in Sources */,
+				CA0FA685297B269000EA0C43 /* VideoChatView.swift in Sources */,
 				CA5BF4B028A2D668007ADC0F /* AircoreMediaSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,12 +361,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AircoreMediaSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Testing;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Testing AircoreMedia with input from the microphone.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,12 +400,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AircoreMediaSample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Testing;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Testing AircoreMedia with input from the microphone.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -430,7 +454,7 @@
 			repositoryURL = "https://github.com/aircoreio/aircore-media-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.1;
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

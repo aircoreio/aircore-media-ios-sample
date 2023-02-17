@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChannelConfigView: View {
   @State private var channelConnectionInfo = ChannelConnectionInfo()
-  @ObservedObject var channel: ChannelViewModel
+  @ObservedObject var channelViewModel: ChannelViewModel
 
   var body: some View {
     let submitBlock: (Bool) -> Void = { isEditing in
@@ -21,9 +21,9 @@ struct ChannelConfigView: View {
     TextField("User ID", text: $channelConnectionInfo.userID, onEditingChanged: submitBlock)
 
     Button(action: {
-      channel.toggleJoinLeaveChannel(channelConnectionInfo)
+      channelViewModel.toggleJoinLeaveChannel(channelConnectionInfo)
     }, label: {
-      if channel.channel != nil {
+      if channelViewModel.channel != nil {
         HStack {
           Image(systemName: "x.circle")
             .foregroundColor(.red)

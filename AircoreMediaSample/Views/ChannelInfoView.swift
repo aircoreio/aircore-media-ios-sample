@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct ChannelInfoView: View {
-  @ObservedObject var channel: ChannelViewModel
+  @ObservedObject var channelViewModel: ChannelViewModel
 
   var body: some View {
     HStack {
       Text("Current channel")
       Spacer()
-      Text(channel.channelID)
+      Text(channelViewModel.channelID)
         .foregroundColor(.secondary)
     }
     HStack {
       Text("Channel active state")
       Spacer()
-      Text(channel.joinState?.description ?? "N/A")
+      Text(channelViewModel.joinState?.description ?? "N/A")
         .foregroundColor(.secondary)
     }
     HStack {
       Text("Channel termination cause")
       Spacer()
-      Text(channel.terminationCause?.description ?? "N/A")
+      Text(channelViewModel.terminationCause?.description ?? "N/A")
         .foregroundColor(.secondary)
     }
   }

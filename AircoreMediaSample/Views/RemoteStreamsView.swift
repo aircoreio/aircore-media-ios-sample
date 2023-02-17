@@ -8,41 +8,56 @@
 import SwiftUI
 
 struct RemoteStreamView: View {
-  @ObservedObject var remoteStream: RemoteStreamViewModel
+  @ObservedObject var remoteStreamViewModel: RemoteStreamViewModel
 
   var body: some View {
     HStack {
-      if let remoteAudioMuted = remoteStream.remoteAudioMuted, let localAudioMuted = remoteStream.localAudioMuted {
-        Button(action: {
-          remoteStream.toggleAudioMuted()
-        }, label: {
-          if localAudioMuted {
-            Image(systemName: "speaker.slash")
-          } else {
-            Image(systemName: remoteAudioMuted ? "speaker.slash.fill" : "speaker.fill")
-          }
-        }).imageScale(.large)
-        Spacer()
-      }
-      Text(remoteStream.userID)
-      Text(remoteStream.connectionState)
+      Button(action: {
+        remoteStreamViewModel.toggleAudioMuted()
+      }, label: {
+        if remoteStreamViewModel.localAudioMuted {
+          Image(systemName: "speaker.slash")
+        } else if remoteStreamViewModel.remoteAudioMuted {
+          Image(systemName: "speaker.slash.fill")
+        } else {
+          Image(systemName: "speaker.fill")
+        }
+      }).imageScale(.large)
+        .buttonStyle(.borderless)
+
+      Button(action: {
+        remoteStreamViewModel.toggleVideoMuted()
+      }, label: {
+        if remoteStreamViewModel.localVideoMuted {
+          Image(systemName: "video.slash")
+        } else if remoteStreamViewModel.remoteVideoMuted {
+          Image(systemName: "video.slash.fill")
+        } else {
+          Image(systemName: "video.fill")
+        }
+      }).imageScale(.large)
+        .buttonStyle(.borderless)
+
+      Spacer()
+      Text(remoteStreamViewModel.userID)
+      Text(remoteStreamViewModel.connectionState)
     }
     .padding(5)
     // Voice activity will display a green border around this view
-    .border(.green, width: remoteStream.voiceActivity == true ? 1 : 0)
+    .border(.green, width: remoteStreamViewModel.voiceActivity == true ? 1 : 0)
   }
 }
 
 struct RemoteStreamsView: View {
-  @ObservedObject var remoteStreams: RemoteStreamsViewModel
+  @ObservedObject var remoteStreamsViewModel: RemoteStreamsViewModel
 
   var body: some View {
-    if remoteStreams.remoteStreams.isEmpty {
+    if remoteStreamsViewModel.remoteStreams.isEmpty {
       Text("No remote streams")
         .foregroundColor(.secondary)
     }
-    ForEach(Array(remoteStreams.remoteStreams), id: \.self) { remoteStream in
-      RemoteStreamView(remoteStream: RemoteStreamViewModel(remoteStream: remoteStream))
+    ForEach(remoteStreamsViewModel.remoteStreams, id: \.remoteStream) { remoteStreamViewModel in
+      RemoteStreamView(remoteStreamViewModel: remoteStreamViewModel)
     }
   }
 }
